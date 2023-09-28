@@ -1,4 +1,12 @@
-# React-shop-cloudfront
+# Leaf shop
+
+
+## Website links:
+
+CloudFront URL: https://dccvfm8bzh37l.cloudfront.net/  
+S3-website: http://aws-practice-svorobyev.s3-website-eu-west-1.amazonaws.com/
+
+## About
 
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
 
