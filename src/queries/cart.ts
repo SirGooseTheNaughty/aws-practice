@@ -11,7 +11,13 @@ export function useCart() {
         Authorization: `Basic ${localStorage.getItem("authorization_token")}`,
       },
     });
-    return res.data;
+    return res.data?.map((product) => {
+      const { count, ...rest } = product;
+      return {
+        product: rest,
+        count,
+      }
+    }) || [];
   });
 }
 
