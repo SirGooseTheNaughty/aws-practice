@@ -44,12 +44,7 @@ export default function CSVFileImport({ url, title }: CSVFileImportProps) {
         },
       });
     } catch (error: any) {
-      if (error?.status === 401) {
-        return console.error('Not authorized', error);
-      }
-      if (error?.status === 403) {
-        return console.error('Access denied', error);
-      }
+      console.error(error);
     }
     if (!preSignedUrlResponse?.data) {
       return console.error('Signed URL is undefined');
